@@ -1,0 +1,33 @@
+.card {
+  border: 1px solid rgba(0, 0, 0, 0.242);
+  border-radius: 20px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.153);
+  padding: 20px;
+  text-align: center;
+  margin: 15px;
+  display: inline-block;
+  max-width: 250px;
+}
+
+.card:hover {
+  box-shadow: 5px 5px 5px rgba(192, 42, 42, 0.342);
+  border: 2px solid rgb(192, 42, 42);
+}
+
+.card .card-image {
+  max-width: 75%;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 5px;
+}
+
+.card .card-title {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0px;
+  color: rgba(37, 35, 35, 0.808);
+}
+
+.card .card-text {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgba(0, 0, 0, 0.6);
+}

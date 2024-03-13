@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Pass</title>
+    
+</head>
+<body>
+    <div id="generatorHolder">
+        <h1>Gerador de senhas</h1>
+        <p>Selecione os componentes da senha.</p>
+        <form>
+            <label for="length">Número de caracteres:</label>
+            <input type="number" name="length" id="length" min="1" max="35"><br>
+
+            <input type="checkbox" name="lowerCase" id="lowerCase">
+            <label for="lowerCase">Incluir letras minúsculas.</label><br>
+
+            <input type="checkbox" name="upperCase" id="upperCase">
+            <label for="upperCase">Incluir letras maiúsculas.</label><br>
+
+            <input type="checkbox" name="numbers" id="numbers">
+            <label for="numbers">Incluir números.</label><br>
+
+            <input type="checkbox" name="symbols" id="symbols">
+            <label for="symbols">Incluir símbolos.</label><br>
+
+            <button type="button" id="buttonSubmit" onclick="passwordGenerator()">Gerar senha</button>
+        </form>
+        <p id="genPassword">A senhra aparecerá aqui.</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

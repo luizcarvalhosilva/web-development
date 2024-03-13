@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo de fatorial</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        main {
+            border: 1px solid black;
+            border-radius: 10px;
+            padding: 10px;
+            max-width: 400px;
+            margin: 20px auto;
+        }
+
+        h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            padding: 5px;
+            margin: -10px -11.6px 0px -11.6px;
+            border-radius: 10px 10px 0px 0px;
+            font-size: 1.3em;
+            background-color: rgba(253, 85, 24, 0.589);
+        }
+
+        p.content {
+          text-align: justify;  
+          text-indent: 30px;
+          padding: 5px 7px 15px 7px;
+        }
+
+        p.result {
+            padding: 7px 15px;
+        }
+    </style>
+    <script src="ambiente.js"></script>
+</head>
+<body>
+    <main>
+        <h1>Calculadora de fatorial</h1>
+        <p class="content">A calculadora abaixo irá calcular o fatorial do número que o usuário digitar. Fatorial é o produto de todos os números inteiros positivos de 1 até um número inteiro não negativo "n". É frequentemente denotado como "n!" e é calculado multiplicando-se todos esses números juntos. Por exemplo, o fatorial de 5 (5!) é igual a 5 x 4 x 3 x 2 x 1 = 120. É uma operação comum em matemática e é usada em diversas aplicações.</p>
+        <p class="result">
+            Digite um número: <input type="number" name="textNb1" id="textNb1">
+            <input type="button" value="Calcular" onclick="fatorial()">
+        </p>
+        <p id="result">O resultado sairá aqui.</p>
+    </main>
+</body>
+</html>
