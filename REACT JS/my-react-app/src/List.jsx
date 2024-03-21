@@ -1,11 +1,23 @@
 
 function List(){
-    const fruits = ["apple", "orange", "banana", "mango", "pineapple"];
+    const fruits = [
+        {id: 1, name:"apple", calories: 95}, 
+        {id: 2, name:"orange", calories: 45}, 
+        {id: 3, name:"banana", calories: 105}, 
+        {id: 4, name:"mango", calories: 159}, 
+        {id: 5, name:"pineapple", calories: 37}
+    ];
 
-    fruits.sort();
+    // fruits.sort((a,b) => a.name.localeCompare(b.name));  //ALPHABETICAL
+    // fruits.sort((a,b) => b.name.localeCompare(a.name)); //REVERSE ALPHABETICAL
+    // fruits.sort((a,b) => b.calories - a.calories);     //REVERSE NUMERIC
+    // fruits.sort((a,b) => a.calories - b.calories);    //NUMERIC
 
-    /*a linha de código abaixo é necessária para que possamos mostrar os elementos do array como lista*/
-    const listItems = fruits.map(fruit => <li>{fruit}</li>); 
+    /* 
+    *    O uso de 'key' permite definir chaves únicas para cada elemento e isso é importante, pois permite que o *  *    react identifique, de forma eficiente e otimizada, os itens adicionados, removidos ou modificados de um    *    array.
+    */
+    const listItems = fruits.map(fruit => <li key={fruit.id}>{fruit.name}: &nbsp; 
+                                            <span style={{fontWeight: "bold"}}>{fruit.calories}</span></li>); 
 
     return(<ul>{listItems}</ul>)
 }
