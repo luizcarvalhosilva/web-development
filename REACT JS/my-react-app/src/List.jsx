@@ -17,12 +17,13 @@ function List(){
     *    O uso de 'key' permite definir chaves únicas para cada elemento e isso é importante, pois permite que o *  *    react identifique, de forma eficiente e otimizada, os itens adicionados, removidos ou modificados de um    *    array.
     */
 
-    const lowCalFruits = fruits.filter(fruit => fruit.calories < 100);
+    // const lowCalFruits = fruits.filter(fruit => fruit.calories < 100);
+    const highCalFruits = fruits.filter(fruit => fruit.calories >= 100);
 
-    const listItems = lowCalFruits.map(lowCalFruit => <li key={lowCalFruit.id}>
-                                                              {lowCalFruit.name}: &nbsp; 
+    const listItems = highCalFruits.map(highCalFruit => <li key={highCalFruit.id}>
+                                                              {highCalFruit.name}: &nbsp; 
                                                               <span style={{fontWeight: "bold"}}>
-                                                              {lowCalFruit.calories}</span></li>); 
+                                                              {highCalFruit.calories}</span></li>); 
 
     return(<ul>{listItems}</ul>)
 }
