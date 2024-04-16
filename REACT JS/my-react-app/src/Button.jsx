@@ -6,6 +6,8 @@ function Button() {
         if (count < 3) {
             count++;
             console.log(`${name}, you clicked me ${count} time.`)
+        } else {
+            console.log(`${name}, please stop clicking me.`)
         }
     };
 
