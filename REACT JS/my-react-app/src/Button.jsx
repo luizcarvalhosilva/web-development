@@ -1,11 +1,17 @@
 
 function Button() {
 
-    const handleClick = () => console.log("OUCH");
+    let count = 0;
+    const handleClick = (name) => {
+        if (count < 3) {
+            count++;
+            console.log(`${name}, you clicked me ${count} time.`)
+        }
+    };
 
-    const handleClick2 = (name) => console.log(`${name}, stop clickling me.`) //mandando parâmetro
+    
 
-    return(<button onClick={() => handleClick2("Joh")}>Click me &#x1F642;</button>)
+    return(<button onClick={() => handleClick("Joh")}>Click me &#x1F642;</button>)
 }
 
 export default Button
