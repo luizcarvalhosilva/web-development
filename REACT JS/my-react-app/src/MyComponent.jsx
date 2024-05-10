@@ -4,7 +4,16 @@ function MyComponent() {
 
     const [name, setName] = useState();
 
-    return(<></>)
+    const updateName = () => {
+        setName("Luiz");
+    }
+
+    return(
+        <div>
+            <p>Name: {name}</p>        
+            <button onClick={updateName}>Set Name</button>;
+        </div>
+    )
 }
 
 export default MyComponent;
