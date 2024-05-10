@@ -2,7 +2,7 @@ import React, {useState} from "react";
 
 function MyComponent() {
 
-    const [name, setName] = useState();
+    const [name, setName] = useState("Guest");
 
     const updateName = () => {
         setName("Luiz");
@@ -11,7 +11,7 @@ function MyComponent() {
     return(
         <div>
             <p>Name: {name}</p>        
-            <button onClick={updateName}>Set Name</button>;
+            <button onClick={updateName}>Set Name</button>
         </div>
     )
 }
