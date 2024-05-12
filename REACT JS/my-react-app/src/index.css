@@ -1,0 +1,64 @@
+.counter-container {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.countDisplay {
+    font-size: 7.5em;
+    margin-top: 0px;
+    margin-bottom: 50px;
+}
+
+.counter-button {
+    width: 150px;
+    height: 50px;
+    font-size: 1.7em;
+    margin: 0px 5px;
+    border-radius: 7px;
+    cursor: pointer;
+    border: none;
+}
+
+#increment {
+    color: #fff;
+    background-color: #28a745;
+    border-color: #28a745;
+}
+#increment:hover {
+    color: #fff;
+    background-color: #218838;
+    border-color: #1e7e34;
+}
+#increment:focus {
+    box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.5);
+}
+
+
+#decrement {
+    color: #fff;
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+#decrement:hover {
+    color: #fff;
+    background-color: #c82333;
+    border-color: #bd2130;
+}
+#decrement:focus {
+    box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.5);
+}
+
+
+#reset {
+    color: #fff;
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+#reset:hover {
+    color: #fff;
+    background-color: #5a6268;
+    border-color: #545b62;
+}
+#reset:focus {
+    box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.5);
+}
