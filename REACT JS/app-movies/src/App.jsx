@@ -10,7 +10,7 @@ function App() {
       <Banner/>
       <Container>
         <h1>TESTE</h1>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo, voluptates! Veniam officia reiciendis quae harum voluptates praesentium ut sed reprehenderit, culpa quam earum dolor dignissimos eaque laudantium tenetur, possimus sapiente.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt rem optio delectus? A quam dolorem perferendis cumque natus enim, maiores maxime iste velit veniam ullam nulla vero iusto soluta dolor!</p>
       </Container>
       <Footer/>
     </>
