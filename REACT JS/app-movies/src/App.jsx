@@ -8,8 +8,10 @@ function App() {
     <>
       <Header/>
       <Banner/>
-      <h1>TESTE</h1>
-      <Container/>
+      <Container>
+        <h1>TESTE</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo, voluptates! Veniam officia reiciendis quae harum voluptates praesentium ut sed reprehenderit, culpa quam earum dolor dignissimos eaque laudantium tenetur, possimus sapiente.</p>
+      </Container>
       <Footer/>
     </>
   )
