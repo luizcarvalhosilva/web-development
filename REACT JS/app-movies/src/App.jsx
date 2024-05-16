@@ -7,10 +7,10 @@ function App() {
   return (
     <>
       <Header/>
-      <Banner/>
+      <Banner image="home"/>
       <Container>
         <h1>TESTE</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt rem optio delectus? A quam dolorem perferendis cumque natus enim, maiores maxime iste velit veniam ullam nulla vero iusto soluta dolor!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt rem optio delectus? </p>
       </Container>
       <Footer/>
     </>
