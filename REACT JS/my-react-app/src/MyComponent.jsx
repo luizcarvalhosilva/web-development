@@ -5,6 +5,7 @@ function MyComponent() {
     const [name, setName] = useState("Guest");
     const [quantity, setQuantity] = useState(1);
     const [comment, setComment] = useState("")
+    const [payment, setPayment] = useState("");
 
     const handleNameChange = (e) => {
         setName(e.target.value);
@@ -18,6 +19,10 @@ function MyComponent() {
         setComment(event.target.value);
     }
 
+    const handlePaymentChange = (e) => {
+        setPayment(e.target.value);
+    }
+
     return(
         <div>
             <input value={name} onChange={handleNameChange}/>
@@ -28,6 +33,14 @@ function MyComponent() {
 
             <textarea value={comment} onChange={handleCommentChange} placeholder="Enter delivery instructions"/>
             <p>User's comment: {comment}</p>
+
+            <select value={payment} onChange={handlePaymentChange}>
+                <option value="">select an option</option>
+                <option value="Visa">Visa</option>
+                <option value="Mastercard">Mastercard</option>
+                <option value="Giftcard">Giftcard</option>
+            </select>
+            <p>Payment method: {payment}</p>
         </div>
     );
    
