@@ -5,15 +5,15 @@ function MyComponent() {
     const [count, setCount] = useState(0);
 
     function increment() {
-        setCount(prevCount => prevCount + 1);
-        setCount(prevCount => prevCount + 1);
-        setCount(prevCount => prevCount + 1);
-        setCount(prevCount => prevCount + 1);
-        setCount(prevCount => prevCount + 1);
+        setCount(c => c + 1);
+        setCount(c => c + 1);
+        setCount(c => c + 1);
+        setCount(c => c + 1);
+        setCount(c => c + 1);
     }
 
     function decrement() {
-        setCount(prevCount => prevCount - 1);
+        setCount(c => c - 1);
     }
 
     function reset() {
