@@ -1,60 +1,74 @@
-body {
+.to-do-list {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgba(0, 0, 0, 0.4);
-}
-
-.general-container {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin: auto;
-    width: 500px;
-    background-color: white;
-    border: 10px solid;
-    box-shadow: 3px 3px 14px 2px rgba(0, 0, 0, 0.8);
-    border-radius: 30px;
-    padding-bottom: 10px;
-}
-
-.color-picker-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.color-picker-container h1 {
-    margin: 25px 30px;
-    font-size: 3em;
-}
-
-.color-display {
-    width: 300px;
-    height: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 7px solid hsl(0, 0%, 80%);
-    transition: 0.25s ease;
-    border-radius: 25px;
-    margin-bottom: 25px;
-}
-.color-display p {
-    color: hsl(0, 0%, 80%);
-    font-weight: bold;
-    font-size: 2rem;
     text-align: center;
+    margin-top: 100px;
 }
 
-label {
+h1 {
+    font-size: 4rem;
+}
+
+input {
+    font-size: 1.6rem;
+    padding: 10px;
+    border: 2px solid hsl(0, 0%, 80%, 0.5);
+    border-radius: 7px;
+    color: hsla(0, 0%, 0%, 0.7);
+}
+
+button {
+    font-size: 1.7rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+.add-button {
+    background-color: hsl(125, 47%, 47%);
+}
+.add-button:hover {
+    background-color: hsl(125, 47%, 37%);
+}
+
+.delete-button {
+    background-color: hsl(10, 77%, 57%);
+}
+.delete-button:hover {
+    background-color: hsl(10, 77%, 47%);
+}
+
+.move-button {
+    background-color: hsl(42, 77%, 57%);
+}
+.move-button:hover {
+    background-color: hsl(42, 77%, 47%);
+}
+
+.delete-button, .move-button {
+    font-size: 1.4rem;
+    padding: 6px 13px;
+    margin-left: 10px;
+}
+
+ol {
+    padding: 0;
+}
+
+li {
     font-size: 1.5rem;
     font-weight: bold;
-    margin-bottom: 10px;
+    padding: 13px;
+    background-color: hsl(0, 0%, 92%);
+    margin-bottom: 9px;
+    border: 3px solid hsla(0, 0%, 80%, 0.65);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
 }
-
-input[type="color"] {
-    width: 75px;
-    height: 50px;
-    padding: 5px;
-    border: 3px solid hsl(0, 0%, 80%);
-    border-radius: 10px;
-
+.text {
+    flex: 1;
 }
